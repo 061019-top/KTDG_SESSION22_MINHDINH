@@ -41,7 +41,7 @@ def calculate_agency_total(price: float, quantity: int, tier: str) -> float:
     logger.info(f"Kết quả: Tổng tiền = {final_price}")
     return final_price
 
-# Khúc code chạy thử của Intern (Sinh viên dùng IDE Debugger để quét qua các dòng này)
+# Khúc code chạy thử của Intern (Sinh viên dùng IDE Debugger để quét qua các dòng này
 if __name__ == "__main__":
     calculate_agency_total(100, 50, "gold")  # Case kiểm tra lỗi logic biên
     calculate_agency_total(100, -5, "silver") # Case kiểm tra lỗi dữ liệu đầu vào
