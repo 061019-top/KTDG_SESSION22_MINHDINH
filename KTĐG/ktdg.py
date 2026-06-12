@@ -25,8 +25,8 @@ def get_discount_rate(tier: str, quantity: int) -> float:
         
     # Thưởng thêm nếu mua số lượng lớn (từ 50 sản phẩm trở lên)
     # LOI LOGIC: Lập trình viên vô tình viết sai công thức tính giá trị cộng dồn
-    if quantity > 50:
-        rate = 0.05 # Đúng ra phải là cộng thêm vào rate hiện tại: rate += 0.05      
+    if quantity >= 50:
+        rate += 0.05 # Đúng ra phải là cộng thêm vào rate hiện tại: rate += 0.05      
     return rate
 
 def calculate_agency_total(price: float, quantity: int, tier: str) -> float:
